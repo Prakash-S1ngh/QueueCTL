@@ -1,8 +1,3 @@
-
-import { readJSON,writeJSON } from "../../utils/fileStorage.js";
-
-// here we are reading the json file and writing to it to store the jobs
-
 import { withLock } from "../../utils/fileStorage.js";
 
 const QUEUE_FILE = "queue.json";
@@ -21,14 +16,11 @@ export const getNextRunnableJob = (workerId) => {
         data.jobs = data.jobs || [];
         const now = Date.now();
 
-        const idx = data.jobs.findIndex(
-            (j) => j.state === "pending" && j.run_at <= now
-        );
+        const idx = data.jobs.findIndex((j) => j.state === "pending" && j.run_at <= now);
 
-        if (idx === -1){
-            console.log("No runnable job found");
+        if (idx === -1) {
             return null;
-        } 
+        }
 
         const job = data.jobs[idx];
         job.state = "processing";
@@ -36,7 +28,6 @@ export const getNextRunnableJob = (workerId) => {
         job.updated_at = now;
         job.processing_started_at = now;
 
-        // Log the claim to aid observability of which worker took which job
         try {
             console.log(`[CLAIM] worker ${workerId} claimed job ${job.id}`);
         } catch (_) {}

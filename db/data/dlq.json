@@ -1,18 +1,11 @@
 {
   "dlq": [
     {
-      "id": "smk-1763218821389-bad1",
+      "id": "smk-1763228868448-bad1",
       "command": "definitelynotacommand_xyz",
       "attempts": 3,
       "last_error": "Command failed: definitelynotacommand_xyz\n/bin/sh: definitelynotacommand_xyz: command not found\n",
-      "failed_at": 1763218823507
-    },
-    {
-      "id": "smk-1763219945029-bad1",
-      "command": "definitelynotacommand_xyz",
-      "attempts": 3,
-      "last_error": "Command failed: definitelynotacommand_xyz\n/bin/sh: definitelynotacommand_xyz: command not found\n",
-      "failed_at": 1763219947131
+      "failed_at": 1763228870564
     }
   ]
 }
