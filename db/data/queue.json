@@ -1,4 +1,82 @@
 {
-    "jobs":[]
+  "jobs": [
+    {
+      "id": "smk-1763218821389-ok1",
+      "command": "echo ok1",
+      "state": "completed",
+      "attempts": 0,
+      "max_retries": 2,
+      "run_at": 1763218821393,
+      "created_at": 1763218821393,
+      "updated_at": 1763218821445,
+      "last_error": null,
+      "worker_id": "worker-63182",
+      "processing_started_at": 1763218821440
+    },
+    {
+      "id": "smk-1763218821389-ok2",
+      "command": "echo ok2",
+      "state": "completed",
+      "attempts": 0,
+      "max_retries": 2,
+      "run_at": 1763218821393,
+      "created_at": 1763218821393,
+      "updated_at": 1763218821446,
+      "last_error": null,
+      "worker_id": "worker-63181",
+      "processing_started_at": 1763218821441
+    },
+    {
+      "id": "smk-1763218821389-delay",
+      "command": "echo delayed",
+      "run_at": 1763218822893,
+      "state": "completed",
+      "attempts": 0,
+      "max_retries": 2,
+      "created_at": 1763218821393,
+      "updated_at": 1763218823089,
+      "last_error": null,
+      "worker_id": "worker-63182",
+      "processing_started_at": 1763218823072
+    },
+    {
+      "id": "smk-1763219945029-ok1",
+      "command": "echo ok1",
+      "state": "completed",
+      "attempts": 0,
+      "max_retries": 2,
+      "run_at": 1763219945033,
+      "created_at": 1763219945033,
+      "updated_at": 1763219945083,
+      "last_error": null,
+      "worker_id": "worker-68437",
+      "processing_started_at": 1763219945078
+    },
+    {
+      "id": "smk-1763219945029-ok2",
+      "command": "echo ok2",
+      "state": "completed",
+      "attempts": 0,
+      "max_retries": 2,
+      "run_at": 1763219945033,
+      "created_at": 1763219945033,
+      "updated_at": 1763219945083,
+      "last_error": null,
+      "worker_id": "worker-68438",
+      "processing_started_at": 1763219945078
+    },
+    {
+      "id": "smk-1763219945029-delay",
+      "command": "echo delayed",
+      "run_at": 1763219946533,
+      "state": "completed",
+      "attempts": 0,
+      "max_retries": 2,
+      "created_at": 1763219945033,
+      "updated_at": 1763219946721,
+      "last_error": null,
+      "worker_id": "worker-68437",
+      "processing_started_at": 1763219946706
+    }
+  ]
 }
-
