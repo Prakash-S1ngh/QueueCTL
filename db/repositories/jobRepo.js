@@ -5,6 +5,7 @@ const QUEUE_FILE = "queue.json";
 export const createJob = (job) => {
     return withLock(QUEUE_FILE, (data) => {
         data.jobs = data.jobs || [];
+        console.log(QUEUE_FILE)
         data.jobs.push(job);
         // return the created job as result
         return job;
@@ -13,6 +14,7 @@ export const createJob = (job) => {
 
 export const getNextRunnableJob = (workerId) => {
     return withLock(QUEUE_FILE, (data) => {
+        console.log(QUEUE_FILE)
         data.jobs = data.jobs || [];
         const now = Date.now();
 

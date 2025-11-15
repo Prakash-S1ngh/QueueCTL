@@ -6,6 +6,7 @@ import * as configRepo from '../db/repositories/configRepo.js'
 
 export const enqueue = (job) => {
     const now = Date.now();
+    console.log("Enqueuing job:", job)
     // Respect provided run_at (ms since epoch); default to now
     const providedRunAt =
         job && job.run_at !== undefined
@@ -26,7 +27,7 @@ export const enqueue = (job) => {
         updated_at: now,
         last_error: null,
     }
-
+    console.log("Reached here")
     return jobRepo.createJob(newJob)
 
 }

@@ -227,7 +227,7 @@ queuectl config-set --help
 npm run smoke
 
 # Basic enqueue and processing
-queuectl enqueue '{"id":"p1","command":"echo 1"}'
+queuectl enqueue '{"id":"kunj","command":"echo 4"}'
 queuectl enqueue '{"id":"p2","command":"echo 2"}'
 queuectl enqueue '{"id":"p3","command":"echo 3"}'
 
@@ -269,5 +269,5 @@ queuectl worker-stop
 ## 🎥 Demo Video
 
 Watch the full demo here:  
-👉 [Click to View Demo Video]()
+👉 [Click to View Demo Video](https://drive.google.com/file/d/1YucNiGFQHnYIQPZpPAYv1KJNDvJH9AV8/view?usp=sharing)
 

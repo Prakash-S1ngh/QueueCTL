@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "commander": "^13.1.0",
     "commandor": "^0.1.3",
     "fs-ext": "^2.1.1"
   }
